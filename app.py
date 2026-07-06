@@ -540,7 +540,7 @@ elif menu == "🧠 Analisis Sentimen":
     with right_col:
         st.markdown('<div class="section-title">Contoh Opini</div>', unsafe_allow_html=True)
 
-        sample_1 = "Kurikulum Merdeka membuat siswa lebih aktif dan guru lebih leluasa mengembangkan pembelajaran."
+        sample_1 = "Kurikulum Merdeka sangat bagus untuk diterapkan, karena membuat siswa lebih aktif dan guru lebih leluasa mengembangkan pembelajaran."
         sample_2 = "Pelaksanaan Kurikulum Merdeka masih membingungkan karena fasilitas sekolah belum merata."
         sample_3 = "Kurikulum Merdeka sudah diterapkan di beberapa sekolah dengan hasil yang beragam."
 
