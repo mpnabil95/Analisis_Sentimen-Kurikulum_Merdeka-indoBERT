@@ -28,10 +28,21 @@ st.markdown("""
         background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 45%, #f8fafc 100%);
     }
 
-    /* Hide default Streamlit noise */
+    /* Hide default Streamlit noise, but keep header active.
+       The sidebar expand/collapse control lives in Streamlit's header area. */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
+
+    header[data-testid="stHeader"] {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    [data-testid="collapsedControl"] {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 999999 !important;
+    }
 
     /* Container spacing */
     .block-container {
